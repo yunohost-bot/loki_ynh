@@ -26,7 +26,7 @@ ynh_script_progression --message="Upgrading source files..." --weight=1
 
 # Download, check integrity, uncompress and patch the source from app.src
 ynh_setup_source --dest_dir="$install_dir" --source_id="loki" --full_replace=1
-ynh_setup_source --dest_dir="$install_dir" --source_id="promtail"
+ynh_setup_source --dest_dir="$install_dir" --source_id="promtail" --full_replace=1
 
 # Rename the binaries to remove arch
 mv "$install_dir"/loki-linux-* "$install_dir"/loki
